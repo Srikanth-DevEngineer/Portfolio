@@ -1,0 +1,854 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title> Srikanth Portfolio </title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/unicons.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <!-- MAIN STYLE -->
+    <link rel="stylesheet" href="css/tooplate-style.css">
+    <style>
+      
+      body {
+  background: #111;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  padding: 40px;
+}
+
+/* Style the span */
+span {
+  display: inline-block;
+  color: #67d1b9;
+  opacity: 0;                     /* start invisible */
+  transform: translateY(30px);    /* start lower */
+  animation: fadeSlide 1s ease-out forwards; /* trigger animation */
+}
+
+/* Define the animation */
+@keyframes fadeSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+/* Animated heading */
+h2 {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+
+  /* Start hidden */
+  opacity: 0;
+  background: linear-gradient(90deg, yellow 0%, white 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* Animation */
+  animation: fadeSlide 1s ease-out forwards, shimmer 2.5s linear infinite;
+}
+
+/* Fade and slide on load */
+@keyframes fadeSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Shimmer gradient effect */
+@keyframes shimmer {
+  0% {
+    background-position: 200% center;
+  }
+  100% {
+    background-position: -200% center;
+  }
+}    </style>
+
+  </head>
+  <body>
+
+    <!-- MENU -->
+    <nav class="navbar navbar-expand-sm navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class='uil uil-user' style="color:yellow"></i> <span>Durga Srikanth . K</span> </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link"><span data-hover="About">About</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#project" class="nav-link"><span data-hover="Projects">Projects</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#resume" class="nav-link"><span data-hover="Resume">Work-History</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link"><span data-hover="Contact">Contact</span></a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ml-lg-auto">
+                    <div class="ml-lg-4">
+                      <div class="color-mode d-lg-flex justify-content-center align-items-center">
+                        <i class="color-mode-icon" style=" color: #20a965"></i>
+                        <span>Color mode </span>
+                      </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+<style>
+  .hero-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap; /* responsive */
+}
+
+.title-text {
+  font-size: 32px;
+  font-weight: 600;
+  color: #5eead4; /* teal */
+  white-space: nowrap;
+}
+
+.animated-info {
+  position: relative;
+  height: 40px;
+  overflow: hidden;
+}
+
+.animated-item {
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+  color: #facc15; /* yellow */
+}
+.animated-info {
+  position: relative;
+}
+
+.animated-item {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+</style>
+
+    <!-- ABOUT -->
+    <section class="about full-screen d-lg-flex justify-content-center align-items-center" id="about">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-lg-7 col-md-12 col-12 d-flex align-items-center">
+                    <div class="about-text">
+                        <h3 class="small-text">Welcome to <span class="mobile-block">My Portfolio  !</span></h3>
+                        <h1 class="animated animated-text">
+<div class="hero-title">
+  <span class="title-text">I'm a Professional</span>
+
+  <div class="animated-info">
+    <span class="animated-item">Angular 13 – 20</span>
+    <span class="animated-item">Node.js </span>
+    <span class="animated-item">Express.js</span>
+     </div>
+</div>
+
+
+
+                        </h1>
+
+                       <p style="color: #fff;">Building a successful <span> Fullstack Developer with Angular and Laravel </span>  is a challenge. I am highly energetic in user experience design, interfaces, and web development, with a focus on <span>Angular</span> and <span>Laravel</span>.</p>
+<div class="hero-title">
+
+  <span class="animated-item">MySQL</span>
+    <span class="animated-item">Laravel</span>
+    <span class="animated-item">RESTFULLAPIs - PAYMENT API</span>
+    
+</div>
+                        
+                        <div class="custom-btn-group mt-4">
+<a href="assets/resume/Sreekanth_Resume.pdf" download class="btn mr-lg-2 custom-btn">
+  <i class='uil uil-file-alt'></i> Download Resume
+</a>
+
+                          <a href="#contact" class="btn custom-btn custom-btn-bg custom-btn-link">Get Contact</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-5 col-md-12 col-12">
+                    <div class="about-image svg">
+                        <img src="images/undraw/srikanth_new_1.png" class="img-fluid" alt="svg image">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+                                     <h2>
+                      web-based Application
+</h2>        
+    <!-- own PROJECTS -->
+    <section class="project py-2" id="project">
+        <div class="container">
+                
+                <div class="row">
+                  <div class="col-lg-11 text-center mx-auto col-12">
+
+                      <div class="col-lg-8 mx-auto">
+                    
+                        <h2>
+    Garbage disposal slot booking  application, built with PHP and integrated with Stripe for secure payments.
+</h2>
+                      </div>
+
+                      <div class="owl-carousel owl-theme">
+                        <div class="item">
+                          <div class="project-info">
+                            <img src="images/project/project-image9.png" class="img-fluid" alt="project image">
+                          </div>
+                        </div>
+
+                        <div class="item">
+                          <div class="project-info">
+                            <img src="images/project/project-image-10.png" class="img-fluid" alt="project image">
+                          </div>
+                        </div>
+
+                        <div class="item">
+                          <div class="project-info">
+                            <img src="images/project/project-image-11.png" class="img-fluid" alt="project image">
+                          </div>
+                        </div>
+
+                        <div class="item">
+                          <div class="project-info">
+                            <img src="images/project/project-image-12.png" class="img-fluid" alt="project image">
+                          </div>
+                        </div>
+
+                        <div class="item">
+                          <div class="project-info">
+                            <img src="images/project/project-image-14.png" class="img-fluid" alt="project image">
+                          </div>
+                        </div>
+
+                        <div class="item">
+                          <div class="project-info">
+                            <img src="images/project/project-image-15.png" class="img-fluid" alt="project image">
+                          </div>
+                        </div>
+
+                        <div class="item">
+                          <div class="project-info">
+                            <img src="images/project/project-image-16.png" class="img-fluid" alt="project image">
+                          </div>
+                        </div
+                      </div>
+
+                  </div>
+                </div>
+        </div>
+    </section>
+
+
+
+        <section class="project py-2" id="project">
+        <div class="container">
+                
+                <div class="row">
+                  <div class="col-lg-11 text-center mx-auto col-12">
+
+                      <div class="col-lg-8 mx-auto">
+                    
+                        <h2>
+    A web-based application that allows users to browse, select, and order fresh meat online with doorstep delivery.
+</h2>
+                      </div>
+
+                      <div class="owl-carousel owl-theme">
+                        <div class="item">
+                          <div class="project-info">
+                            <img src="images/project/pure-meats-4.png" class="img-fluid" alt="project image">
+                          </div>
+                        </div>
+
+                        <div class="item">
+                          <div class="project-info">
+                            <img src="images/project/pure-meats-6.png" class="img-fluid" alt="project image">
+                          </div>
+                        </div>
+
+                        <div class="item">
+                          <div class="project-info">
+                            <img src="images/project/pure-meats-5.png" class="img-fluid" alt="project image">
+                          </div>
+                        </div>
+
+                        <div class="item">
+                          <div class="project-info">
+                            <img src="images/project/pure-meats-3.png" class="img-fluid" alt="project image">
+                          </div>
+                        </div>
+
+                        <div class="item">
+                          <div class="project-info">
+                            <img src="images/project/pure-meats-1.png" class="img-fluid" alt="project image">
+                          </div>
+                        </div>
+
+                        <div class="item">
+                          <div class="project-info">
+                            <img src="images/project/pure-meats-8.png" class="img-fluid" alt="project image">
+                          </div>
+                        </div>
+
+                        <div class="item">
+                          <div class="project-info">
+                            <img src="images/project/project-image-16.png" class="img-fluid" alt="project image">
+                          </div>
+                        </div
+                      </div>
+
+                  </div>
+                </div>
+        </div>
+    </section>
+
+
+    
+     <!--  PROJECTS -->
+     <section class="project py-2" id="project">
+        <div class="container">
+                
+                <div class="row">
+                  <div class="col-lg-11 text-center mx-auto col-12">
+
+                      <div class="col-lg-8 mx-auto">
+                     <h2 style="color:white;">International Conference Website  — Php  & Angular</h2>
+                      </div>
+
+                      <div class="owl-carousel owl-theme">
+                        <div class="item">
+                          <div class="project-info">
+                            <img src="images/project/project-image0.6.png" class="img-fluid" alt="project image">
+                          </div>
+                        </div>
+
+                        <div class="item">
+                          <div class="project-info">
+                            <img src="images/project/project-image07.png" class="img-fluid" alt="project image">
+                          </div>
+                        </div>
+
+                        <div class="item">
+                          <div class="project-info">
+                            <img src="images/project/project-image0.8.png" class="img-fluid" alt="project image">
+                          </div>
+                        </div>
+
+                        <div class="item">
+                          <div class="project-info">
+                            <img src="images/project/project-image-1..8.png" class="img-fluid" alt="project image">
+                          </div>
+                        </div>
+
+                        <div class="item">
+                          <div class="project-info">
+                            <img src="images/project/project-image-19.png" class="img-fluid" alt="project image">
+                          </div>
+                        </div>
+                      </div>
+
+                  </div>
+                </div>
+        </div>
+    </section>
+
+
+    <!-- FEATURES -->
+    <section class="resume py-5 d-lg-flex justify-content-center align-items-center" id="resume">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 col-12">
+                  <h2 class="mb-4">Experiences</h2>
+
+                    <div class="timeline">
+                        <div class="timeline-wrapper">
+                             <div class="timeline-yr">
+                                  <span>2025 - 2024 Current</span>
+                             </div>
+                             <div class="timeline-info">
+                                  <h3><span>Full Stack Developer</span><span>Angular + Laravel + Stripe (Payment Interface) </span></h3>
+                                  <p style="color: #fff;">International Conference Website</p>
+                               <p style="color: #fff;">
+                                Full-stack platform enabling online registration, scheduling, and secure payments via Stripe.
+                               </p>   
+                             </div>
+                        </div>
+
+                        <div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                <span>2023 - 2022</span>
+                            </div>
+                            <div class="timeline-info">
+                                <h3><span>PHP Developer</span><small></small></h3>
+                                <p style="color: #fff;">PHP to handle backend tasks like user registration, login, and subscriptions.</p>
+                                <p style="color: #fff;">API Integration (Frontend ↔ Backend): CURL </p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                <span>2022 - 2021</span>
+                            </div>
+                            <div class="timeline-info">
+                                <h3><span>Angular Developer</h3>
+                                <p style="color: #fff;">Internal hiring management portal using Angular, designed to streamline recruitment workflows within the organization.
+The platform allows HR teams and managers to post job openings, review applications, schedule interviews, and track candidate progress</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                <span>2021</span>
+                            </div>
+                            <div class="timeline-info">
+                                <h3><span>Front End Developer </h3>
+                                <p style="color: #fff;">Contributed as a Front-End Developer for ChainTrail.com, building a modern, responsive, and user-friendly interface to enhance the platform’s digital presence.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-12">
+                  <h2 class="mb-4 mobile-mt-2">Skills</h2>
+
+                    <div class="timeline">
+                        <div class="timeline-wrapper">
+                             <div class="timeline-yr">
+                                  <span>2025</span>
+                             </div>
+                             <div class="timeline-info">
+                                  <h3><span>Full Stack Developer</span><small></small></h3>
+                                  <p style="color: #fff;">Angular 13 - 17 - 20  + Laravel 10, 11,</p>
+                             </div>
+                        </div>
+
+                        
+                        
+                        <div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                <span>2024</span>
+                            </div>
+                            <div class="timeline-info">
+                                <h3><span>  Hosting services  </span></h3>
+                                <p style="color: #fff;">  hostinger , Cpanel , Spanel , Cloud Clusters: Secure and Affordable Cloud Hosting
+ </p>
+                            </div>
+                        </div>
+<div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                <span>2023</span>
+                            </div>
+                            <div class="timeline-info">
+                                <h3><span>PHP  </span><small></small></h3>
+                                <p style="color: #fff;"><a rel="nofollow" href="https://dashboard.stripe.com/login">Stripe</a> is a Payment Interface For   payment integration.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                <span>2022</span>
+                            </div>
+                            <div class="timeline-info">
+                                <h3><span>Front End Developer </span></h3>
+                                <p style="color: #fff;">HTML , CSS , BootStrap , JQuery </p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact py-5" id="contact">
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-lg-5 mr-lg-5 col-12">
+    <div class="profile-card w-100">
+        <!-- Profile / Education Info -->
+        <div class="profile-header text-center">
+            <h2 class="name">Durga Srikanth </h2>
+            <p class="role">Software Developer</p>
+        </div>
+
+        <div class="profile-details px-4 py-3">
+            <div class="detail-item">
+                <h5>Immediate Availability</h5>
+                <p>Yes</p>
+            </div>
+            <div class="detail-item">
+                <h5>Industry Type</h5>
+                <p>IT / Software</p>
+            </div>
+            <div class="detail-item">
+                <h5>Sector</h5>
+                <p>Full Stack Developer</p>
+            </div>
+            <div class="detail-item">
+                <h5>Phone</h5>
+                <p>+91 8331909095</p>
+            </div>
+            <div class="detail-item">
+                <h5>Email</h5>
+                <p><a href="mailto:john@example.com">durgasrikanthdev@gmail.com</a></p>
+            </div>
+            <div class="detail-item">
+                <h5>Education</h5>
+                <p>B.Sc in Computer Science</p>
+            </div>
+        </div>
+
+        <!-- Social Links -->
+        <div class="profile-social text-center py-3">
+            <ul class="social-links">
+                <li><a href="#" class="uil uil-linkedin" data-toggle="tooltip" title="LinkedIn"></a></li>
+                <li><a href="#" class="uil uil-github" data-toggle="tooltip" title="GitHub"></a></li>
+                <li><a href="#" class="uil uil-twitter" data-toggle="tooltip" title="Twitter"></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<style>
+.profile-card {
+    background-color: #000; /* Black background */
+    border-radius: 15px;
+    color: #fff; /* White text */
+    box-shadow: 0 15px 25px rgba(255,255,255,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 35px rgba(255,255,255,0.2);
+}
+
+.profile-header {
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.profile-header .name {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.profile-header .role {
+    margin: 5px 0 0;
+    font-size: 16px;
+    color: #fff; /* White text */
+}
+
+.profile-details {
+    padding: 20px;
+}
+
+.detail-item {
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, background 0.3s ease;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.detail-item:hover {
+    background: rgba(255,255,255,0.1);
+    transform: translateX(5px);
+}
+
+.detail-item h5 {
+    margin: 0 0 5px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.detail-item p {
+    margin: 0;
+    font-size: 16px;
+    color: #fff; /* White text */
+}
+
+.detail-item a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.profile-social {
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.social-links li {
+    margin: 0 10px;
+}
+
+.social-links li a {
+    color: #fff;
+    font-size: 20px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-links li a:hover {
+    color: #ffdd59;
+    transform: scale(1.2);
+}
+</style>
+
+
+         <div class="col-lg-6 col-12">
+    <div class="contact-form">
+       <h2 class="mb-2" style=" color: #fff;">Hire Me</h2>
+        <p class="mb-4" style=" color: #fff;">I'm ready to join your team. Send me your message or email below.</p>
+
+        <form action="mailto:your-email@gmail.com" method="post" enctype="text/plain" onsubmit="return validateEmail()">
+            <div class="row">
+                <div class="col-12">
+                    <input type="email" class="form-control" name="email" placeholder="Your Email" id="email" required>
+                </div>
+
+                <div class="ml-auto mt-3 col-12 col-lg-5">
+                    <input type="submit" class="form-control submit-btn" value="Send">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+function validateEmail() {
+    var email = document.getElementById("email").value;
+    if(email === "") {
+        alert("Please enter your email!");
+        return false;
+    }
+    return true; // Opens mail client
+}
+</script>
+
+<style>
+.contact-form {
+    background-color: #000; /* black background */
+    padding: 30px;
+    border-radius: 15px;
+    color: #fff;
+}
+
+.contact-form h2 {
+    color: #fff;
+}
+
+.contact-form .form-control {
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 12px;
+    margin-bottom: 15px;
+}
+
+.contact-form .form-control:focus {
+    outline: none;
+    border-color: #ffdd59;
+    box-shadow: 0 0 5px #ffdd59;
+}
+
+.submit-btn {
+    background-color: #ffdd59;
+    border: none;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.submit-btn:hover {
+    transform: scale(1.05);
+}
+</style>
+
+
+        </div>
+      </div>
+    </section>
+
+
+<style>
+
+  /* Modal Background */
+.resume-modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    backdrop-filter: blur(3px);
+}
+
+/* Modal Content Box */
+.resume-modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 900px;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Close Button */
+.resume-modal .close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #000;
+}
+
+/* PDF Preview */
+.resume-modal-content iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Download Button */
+.download-btn {
+    background-color: #000;
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #ffdd59;
+    color: #000;
+}
+
+</style>
+<!-- Modal Structure -->
+<div id="resumeModal" class="resume-modal">
+  <div class="resume-modal-content">
+    <span class="close" onclick="closeResumeModal()">&times;</span>
+    
+    <!-- Resume Preview (PDF iframe) -->
+    <iframe src="assets/resume/Sreekanth_Resume"></iframe>
+
+    <!-- Download Button -->
+    <a href="assets/resume/Sreekanth_Resume" download="Sreekanth_Resume.pdf" class="download-btn">
+      Download Resume
+    </a>
+  </div>
+</div>
+
+
+
+
+
+
+
+    <!-- FOOTER -->
+     <footer class="footer py-5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-lg-12 col-12">                                
+                        <span class="copyright-text text-center">Copyright &copy; 2025 - All rights reserved </span>
+                    </div>
+                    
+               </div>
+          </div>
+     </footer>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/Headroom.js"></script>
+    <script src="js/jQuery.headroom.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/custom.js"></script>
+
+  </body>
+</html>
